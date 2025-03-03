@@ -119,5 +119,5 @@ node index.js
 
 ##  Contact & Support
 For any issues or improvements, feel free to **open an issue** or **submit a pull request**.
- **Happy Emailing!
+ 
 
