@@ -1,24 +1,24 @@
-# 📧 Bulk Email Sender
+## Bulk Email Sender
 
 
 
-## 🚀 Project Overview
+## Project Overview
 **Bulk Email Sender** is a Node.js-based tool that allows you to send bulk emails from a CSV file using **Nodemailer**. It validates emails, handles errors, and logs failed attempts, making it an ideal solution for **email campaigns and automated outreach**.
 
-## 📌 Features
-- ✅ **Send bulk emails** from a CSV file.
-- 🛡️ **Email validation** to check format and domain existence.
-- ⚠️ **Error handling** for failed deliveries.
-- 📜 **Logging** for sent and failed emails.
-- 🔧 **Configurable SMTP settings** for different email providers.
+##  Features
+-  **Send bulk emails** from a CSV file.
+-  **Email validation** to check format and domain existence.
+- **Error handling** for failed deliveries.
+- **Logging** for sent and failed emails.
+- **Configurable SMTP settings** for different email providers.
 
-## 🛠️ Technologies Used
-- 🟢 **Node.js** – Backend runtime environment.
-- 📧 **Nodemailer** – Email-sending library.
-- 📑 **CSV Parser** – Reads recipient data from a CSV file.
-- 🔍 **DNS Lookup** – Verifies email domain validity.
+## Technologies Used
+-  **Node.js** – Backend runtime environment.
+- **Nodemailer** – Email-sending library.
+-  **CSV Parser** – Reads recipient data from a CSV file.
+- **DNS Lookup** – Verifies email domain validity.
 
-## 📂 Project Structure
+## Project Structure
 ```
 /bulk-email-sender
 │── index.js            # Main script
@@ -29,20 +29,20 @@
 │── README.md           # Documentation
 ```
 
-## 📥 Installation & Setup
-### **1️⃣ Clone the Repository**
+##  Installation & Setup
+### **1 Clone the Repository**
 ```sh
 git clone https://github.com/YOUR_USERNAME/bulk-email-sender.git
 ```
-### **2️⃣ Navigate to the Project Folder**
+### **2 Navigate to the Project Folder**
 ```sh
 cd bulk-email-sender
 ```
-### **3️⃣ Install Dependencies**
+### **3 Install Dependencies**
 ```sh
 npm install
 ```
-### **4️⃣ Configure SMTP Credentials**
+### **4 Configure SMTP Credentials**
 Update the `config.js` file with your email credentials:
 ```js
 module.exports = {
@@ -53,27 +53,27 @@ module.exports = {
     }
 };
 ```
-### **5️⃣ Prepare Your CSV File**
+### **5 Prepare Your CSV File**
 Ensure `emails.csv` contains:
 ```csv
 email,name
 example1@gmail.com,John Doe
 example2@gmail.com,Jane Doe
 ```
-### **6️⃣ Run the Script**
+### **6 Run the Script**
 ```sh
 node index.js
 ```
 
-## 📧 Example Output
+##  Example Output
 ```
-📧 Sending emails to 2 recipients...
-✅ Email sent to example1@gmail.com
-❌ Failed to send email to example2@gmail.com: Invalid email address
-🎉 All emails processed!
+ Sending emails to 2 recipients...
+ Email sent to example1@gmail.com
+ Failed to send email to example2@gmail.com: Invalid email address
+ All emails processed!
 ```
 
-## 🚀 Deployment Options
+##  Deployment Options
 ### **GitHub Deployment**
 1. Initialize Git and push the project to GitHub:
    ```sh
@@ -106,19 +106,18 @@ node index.js
    0 9 * * * /usr/bin/node /path/to/index.js
    ```
 
-## 🔧 Troubleshooting
-### **1️⃣ Gmail Authentication Error**
+## Troubleshooting
+### ** Gmail Authentication Error**
 - Ensure you have **enabled "Less Secure Apps" or used an App Password** in your Gmail settings.
 - Check your **username and password** in `config.js`.
 - If using **2FA**, generate an **App Password**.
 
-### **2️⃣ Emails Not Sending**
+### ** Emails Not Sending**
 - Verify SMTP server settings.
 - Check **logs/** for error messages.
 - Test using a different email provider.
 
-## 📧 Contact & Support
+##  Contact & Support
 For any issues or improvements, feel free to **open an issue** or **submit a pull request**.
-
-✨ **Happy Emailing!
+ **Happy Emailing!
 
